@@ -1,9 +1,9 @@
 ﻿# Social Media Backend REST API 
 # Features:
-  GET  user profile 
-  follow a user 
-  upload a post 
-  delete a post 
-  like a post 
-  unlike a liked post
-  comment on a post
+  1. GET  user profile 
+  2. Follow a user 
+  3. Upload a post 
+  4. Delete a post 
+  5. Like a post 
+  6. Unlike a liked post
+  7. Comment on a post
