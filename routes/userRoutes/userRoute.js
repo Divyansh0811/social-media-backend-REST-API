@@ -17,12 +17,12 @@ router.route('/').get(async (req, res) => {
     if(!user){
       return res.status(404).json({message: "User with given email does not exists"});
     }
-    console.log("User password: ", user.password)
+    // console.log("User password: ", user.password)
     if(password !== user.password){
       res.status(401).json({message: 'Wrong password!'});
     }
     const token = generateToken(user._id);
-    console.log("Token: ", token)
+    // console.log("Token: ", token)
     const { _id, name, followers, following } = user;
     res.status(200).json({
       token: token,

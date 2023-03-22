@@ -22,7 +22,7 @@ router.route('/').post(async (req, res) => {
     
     const userAlreadyExists = await User.findOne({ email })
     if(userAlreadyExists){
-      res.json({ token: userAlreadyExists.token })
+      res.status(200).json({ message: "User Authenticated", token: userAlreadyExists.token })
     }else{
       res.status(401).json({message: 'Invalid Email or password, please use any of one email (dummy@example.com, user1@example.com, user2@example.com) and password = {abc}'})
     }
