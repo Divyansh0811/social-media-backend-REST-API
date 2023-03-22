@@ -7,3 +7,11 @@
   5. Like a post 
   6. Unlike a liked post
   7. Comment on a post
+# Steps to run:
+```
+  docker compose build
+  docker compose up
+ ```
+  
+  Now the server is listening on port 4000 not on 8080, go to http://localhost:4000/
+  
